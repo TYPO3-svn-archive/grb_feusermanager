@@ -1,0 +1,84 @@
+<f:layout name="default" />
+<f:section name="main">
+    <f:be.container loadPrototype="true" loadScriptaculous="true" scriptaculousModule="effects,slider" addCssFile="{f:uri.resource(path:'Styles/backend.css')}" addJsFile="{f:uri.resource(path:'JavaScripts/backend.js')}">
+        <h1>Neu registrierte Frontent-User</h1>
+        <f:flashMessages/><f:render partial="Navigation/main" />
+        <table class="sortable">
+			<tr>
+				<th> </th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.uid" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.username" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.password" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.name" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.first_name" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.address" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.email" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.zip" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.city" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.language" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.birthday" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.nickname" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.professional" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.company" /></th>				
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.company_street" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.company_zip" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.company_city" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.would_newsletter" /></th>
+				<th><f:translate key="tx_grbfeusermanager_domain_model_frontenduser.agrees_agb" /></th>
+				<th> </th>
+			</tr>
+            <f:for each="{frontendUsers}" as="frontendUser">
+                <tr>
+                    <td>
+                        <f:link.action action="moveFrontendUserToPid" arguments="{frontendUser:frontendUser,pid:settings.pid.accepted,redirect:'listNew'}">
+	                        <span class="button">
+	                            <f:translate key="tx_grbfeusermanager_controller_frontenduser.moveto.accepted" />
+	                        </span>
+                        </f:link.action>&nbsp;
+                        <f:link.action action="moveFrontendUserToPid" arguments="{frontendUser:frontendUser,pid:settings.pid.rejected,redirect:'listNew'}">
+	                        <span class="button">
+	                            <f:translate key="tx_grbfeusermanager_controller_frontenduser.moveto.rejected" />
+	                        </span>
+                        </f:link.action>
+                    </td>
+				  	<td>{frontendUser.uid}</td>		
+					<td>{frontendUser.username}</td>
+					<td>{frontendUser.password}</td>
+					<td>{frontendUser.name}</td>
+					<td>{frontendUser.firstName}</td>
+					<td>{frontendUser.address}</td>
+					<td>{frontendUser.email}</td>
+					<td>{frontendUser.zip}</td>
+					<td>{frontendUser.city}</td>
+					<td>{frontendUser.language}</td>
+					<td>{frontendUser.birthday}</td>
+					<td>{frontendUser.nickname}</td>
+					<td>{frontendUser.professional}</td>
+					<td>{frontendUser.company}</td>					
+					<td>{frontendUser.companyStreet}</td>
+					<td>{frontendUser.companyZip}</td>
+					<td>{frontendUser.companyCity}</td>
+					<td>{frontendUser.wouldNewsletter}</td>
+					<td>{frontendUser.agreesAgb}</td>
+                    <td>
+                        <f:link.action action="moveFrontendUserToPid" arguments="{frontendUser:frontendUser,pid:settings.pid.accepted,redirect:'listNew'}">
+	                        <span class="button">
+	                            <f:translate key="tx_grbfeusermanager_controller_frontenduser.moveto.accepted" />
+	                        </span>
+                        </f:link.action>
+                        <f:link.action action="moveFrontendUserToPid" arguments="{frontendUser:frontendUser,pid:settings.pid.rejected,redirect:'listNew'}">
+	                        <span class="button">
+	                            <f:translate key="tx_grbfeusermanager_controller_frontenduser.moveto.rejected" />
+	                        </span>
+                        </f:link.action>
+                    </td>
+                </tr>
+            </f:for>
+        </table>
+        <f:link.action action="csvExport" arguments="{frontendUser:frontendUser,export:'new'}">
+            <span class="button">
+                Export
+            </span>
+        </f:link.action>
+    </f:be.container>
+</f:section>

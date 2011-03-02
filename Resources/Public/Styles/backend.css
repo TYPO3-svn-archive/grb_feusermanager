@@ -1,0 +1,65 @@
+/**
+ * Content
+ */
+
+body{
+	font-size: 12px;
+	padding: 20px;
+}
+
+table{
+	background: #fff;
+	font-size: 12px;
+}
+
+table th,
+table td{
+	background: #404040;
+	color: #fff;
+	padding: 4px 8px;
+	text-align:left;
+	white-space:nowrap;
+}
+
+table td{
+	background: #ccc;
+	color: #404040;
+}
+
+/**
+ * MENU
+ */
+
+ul{
+	list-style: none;
+	overflow: hidden;
+	padding: 0;
+	margin: 0;
+}
+
+ul li{
+	display: block;
+	float: left;
+	padding: 0 10px 0 2px;
+	overflow: hidden;
+}
+
+ul li a{
+	background: #cccccc;
+	padding: 7px 10px;
+	border: 1px solid #414141;
+}
+
+span.button,
+span.button:hover{
+	border: 1px solid #404040;
+	background: #f2f1f0;
+	padding: 3px;
+	margin: 0 2px;
+	line-height: 25px;
+}
+
+span.button:hover{
+	color: #fff;
+	background: #404040;
+}

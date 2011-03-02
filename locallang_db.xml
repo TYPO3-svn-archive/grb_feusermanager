@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'grb_feusermanager'</description>
+	</meta>
+   <data type="array">
+        <languageKey index="default" type="array">
+            <label index="fe_users.tx_grbfeusermanager_language">Language</label>
+            <label index="fe_users.tx_grbfeusermanager_birthday">Birthday</label>
+            <label index="fe_users.tx_grbfeusermanager_nickname">Nickname</label>
+            <label index="fe_users.tx_grbfeusermanager_professional">Professional</label>
+            <label index="fe_users.tx_grbfeusermanager_company_street">Company: Street</label>
+            <label index="fe_users.tx_grbfeusermanager_company_zip">Company: ZIP</label>
+            <label index="fe_users.tx_grbfeusermanager_company_city">Company: City</label>
+            <label index="fe_users.tx_grbfeusermanager_would_newsletter">Would Newsletter</label>
+            <label index="fe_users.tx_grbfeusermanager_agrees_agb">Agrees AGB</label>
+        </languageKey>
+        <languageKey index="de" type="array">
+            <label index="fe_users.tx_grbfeusermanager_language">Sprache</label>
+            <label index="fe_users.tx_grbfeusermanager_birthday">Geburtstag</label>
+            <label index="fe_users.tx_grbfeusermanager_nickname">Spitzname</label>
+            <label index="fe_users.tx_grbfeusermanager_professional">Beruf</label>
+            <label index="fe_users.tx_grbfeusermanager_company_street">Unternehmen: Strasse</label>
+            <label index="fe_users.tx_grbfeusermanager_company_zip">Unternehmen: PLZ</label>
+            <label index="fe_users.tx_grbfeusermanager_company_city">Unternehmen: Stadt</label>
+            <label index="fe_users.tx_grbfeusermanager_would_newsletter">Möchte den Newsletter</label>
+            <label index="fe_users.tx_grbfeusermanager_agrees_agb">Stimmt den AGB's zu</label>
+        </languageKey>
+    </data>
+</T3locallang>

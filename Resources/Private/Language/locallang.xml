@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for the FE-User Manager extension in the FRONTEND</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_grbfeusermanager_domain_model_frontenduser">Frontend-User</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.uid">ID</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.username">Username</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.password">Password</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.usergroup">Usergroup</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.name">Name</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.first_name">FirstName</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.middle_name">MiddleName</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.last_name">LastName</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.address">Address</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.telephone">Telephone</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.fax">Fax</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.email">Email</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.title">Title</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.zip">Zip</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.city">City</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.country">Country</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.www">www</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.company">Company</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.image">Image</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.lastlogin">Last-Login</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.is_online">Is-Online</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.language">Language</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.birthday">Birthday</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.nickname">Nickname</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.professional">Professional</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.company_street">Company-Street</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.company_zip">Company-Zip</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.company_city">Company-City</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.would_newsletter">Would the Newsletter</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.agrees_agb">Agrees the Agb's</label>
+			
+			<label index="tx_grbfeusermanager_controller_frontenduser.menu.new">New User</label>
+			<label index="tx_grbfeusermanager_controller_frontenduser.menu.accepted">Accepted User</label>
+			<label index="tx_grbfeusermanager_controller_frontenduser.menu.active">Active User</label>		
+			<label index="tx_grbfeusermanager_controller_frontenduser.menu.rejected">Rejected User</label>		
+			
+			<label index="tx_grbfeusermanager_controller_frontenduser.moveto.new">Move to NEW</label>
+			<label index="tx_grbfeusermanager_controller_frontenduser.moveto.accepted">Move to ACCEPTED</label>
+			<label index="tx_grbfeusermanager_controller_frontenduser.moveto.active">Move to ACTIVE</label>		
+			<label index="tx_grbfeusermanager_controller_frontenduser.moveto.rejected">Move to REJECTED</label>
+			<label index="tx_grbfeusermanager_controller_frontenduser.moveallto.active">Move all user to ACTIVE</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="tx_grbfeusermanager_domain_model_frontenduser">Frontend-User</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.uid">ID</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.username">Benutzername</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.password">Passwort</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.usergroup">Benutzergruppe</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.name">Name</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.first_name">Vorname</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.middle_name">Mittelname</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.last_name">Nachname</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.address">Addresse</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.telephone">Telefon</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.fax">Fax</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.email">E-Mail</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.title">Anrede</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.zip">PLZ</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.city">Stadt</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.country">Land</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.www">Homepage</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.company">Geschäft</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.image">Bild</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.lastlogin">Letztes Login</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.is_online">Ist online</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.language">Sprache</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.birthday">Geburtstag</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.nickname">Spitzname</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.professional">Beruf</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.company_street">Geschäft-Strasse</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.company_zip">Geschäft-PLZ</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.company_city">Geschäft-Stadt</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.would_newsletter">Möchte den Newsletter</label>
+			<label index="tx_grbfeusermanager_domain_model_frontenduser.agrees_agb">Akzeptiert die AGB's</label>
+			
+			<label index="tx_grbfeusermanager_controller_frontenduser.menu.new">Neu registrierte Benutzer</label>
+			<label index="tx_grbfeusermanager_controller_frontenduser.menu.accepted">Akzeptierte Benutzer</label>
+			<label index="tx_grbfeusermanager_controller_frontenduser.menu.active">Aktive Benutzer</label>		
+			<label index="tx_grbfeusermanager_controller_frontenduser.menu.rejected">Abgelehnte Benutzer</label>
+			
+			<label index="tx_grbfeusermanager_controller_frontenduser.moveto.new">In NEU verschieben</label>
+			<label index="tx_grbfeusermanager_controller_frontenduser.moveto.accepted">akzeptieren</label>
+			<label index="tx_grbfeusermanager_controller_frontenduser.moveto.active">aktivieren</label>		
+			<label index="tx_grbfeusermanager_controller_frontenduser.moveto.rejected">ablehnen</label>	
+			<label index="tx_grbfeusermanager_controller_frontenduser.moveallto.active">Alle Frontend-User aktivieren</label>
+		</languageKey>		
+	</data>
+</T3locallang>

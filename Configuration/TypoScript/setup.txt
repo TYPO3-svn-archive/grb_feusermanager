@@ -1,0 +1,77 @@
+# -----------------------------------------------------------------------------------------
+# Plugin configuration
+# -----------------------------------------------------------------------------------------
+
+plugin.tx_grbfeusermanager {
+	settings{
+		pid{
+			new 		= {$plugin.tx_grbfeusermanager.settings.pid.new}	
+			accepted 	= {$plugin.tx_grbfeusermanager.settings.pid.accepted}
+			rejected 	= {$plugin.tx_grbfeusermanager.settings.pid.rejected}
+			active 		= {$plugin.tx_grbfeusermanager.settings.pid.active}
+		}
+	}
+	view {
+		templateRootPath = {$plugin.tx_grbfeusermanager.view.templateRootPath}
+		partialRootPath = {$plugin.tx_grbfeusermanager.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_grbfeusermanager.view.layoutRootPath}
+	}
+	persistence{
+		# storagePid = {$plugin.tx_grbfeusermanager.persistence.storagePid}
+		storagePid = {$plugin.tx_grbfeusermanager.settings.pid.new}, {$plugin.tx_grbfeusermanager.settings.pid.accepted}, {$plugin.tx_grbfeusermanager.settings.pid.rejected}, {$plugin.tx_grbfeusermanager.settings.pid.active}
+	}
+}
+
+# -----------------------------------------------------------------------------------------
+# Module configuration
+# -----------------------------------------------------------------------------------------
+
+module.tx_grbfeusermanager {
+    settings < plugin.tx_grbfeusermanager.settings
+    persistence < plugin.tx_grbfeusermanager.persistence
+    view < plugin.tx_grbfeusermanager.view
+}
+
+
+# -----------------------------------------------------------------------------------------
+# Extbase configuration
+# -----------------------------------------------------------------------------------------
+
+config.tx_extbase {
+    persistence{
+        enableAutomaticCacheClearing = 1
+        updateReferenceIndex = 0
+        classes {
+			Tx_GrbFeusermanager_Domain_Model_FrontendUser {
+        		mapping {
+            		tableName = fe_users
+					columns {
+							# db-field fe_users    = db-field domain-model
+							# --------------------------------------------
+                        	usergroup.foreignClass = Tx_Extbase_Domain_Model_FrontendUserGroup
+                        	tx_grbfeusermanager_language.mapOnProperty 			= language
+                        	tx_grbfeusermanager_birthday.mapOnProperty 			= birthday
+                        	tx_grbfeusermanager_nickname.mapOnProperty 			= nickname
+                        	tx_grbfeusermanager_professional.mapOnProperty 		= professional
+                        	tx_grbfeusermanager_company_street.mapOnProperty 	= companyStreet
+                        	tx_grbfeusermanager_company_zip.mapOnProperty 		= companyZip
+                        	tx_grbfeusermanager_company_city.mapOnProperty 		= companyCity
+                        	tx_grbfeusermanager_would_newsletter.mapOnProperty 	= wouldNewsletter
+                        	tx_grbfeusermanager_agrees_agb.mapOnProperty 		= agreesAgb
+                        	pid.mapOnProperty 		= pid
+                        	pid.lastlogin 			= lastlogin
+                    }
+        		}
+    		}
+            Tx_Extbase_Domain_Model_FrontendUserGroup {
+                mapping {
+                    tableName = fe_groups
+                    columns {
+                        subgroup.foreignClass = Tx_Extbase_Domain_Model_FrontendUserGroup
+                        lockToDomain.mapOnProperty = lockToDomain
+                    }
+                }
+            }
+        }
+    }
+}

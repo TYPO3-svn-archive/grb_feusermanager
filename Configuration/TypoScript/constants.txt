@@ -1,0 +1,22 @@
+plugin.tx_grbfeusermanager {
+	settings{
+		pid{
+			new 		= 98		
+			accepted 	= 99
+			rejected 	= 100			
+			active 		= 101
+		}
+	}
+	view {
+		# cat=plugin.tx_grbfeusermanager/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:grb_feusermanager/Resources/Private/Templates/
+		# cat=plugin.tx_grbfeusermanager/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:grb_feusermanager/Resources/Private/Partials/
+		# cat=plugin.tx_grbfeusermanager/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:grb_feusermanager/Resources/Private/Layouts/
+	}
+	persistence {
+		# cat=plugin.tx_grbfeusermanager//a; type=int+; label=Default storage PID
+		storagePid = 98
+	}
+}
